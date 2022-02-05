@@ -6,6 +6,7 @@ from tkinter import messagebox,ttk
 import os
 from gtts import gTTS
 root = tk.Tk()
+root.geometry("1910x1000")
 root.title('Langauge Translator')
 C = tk.Canvas(root,height=10,width=10)
 filename = ImageTk.PhotoImage(Image.open('new.jpg'))
@@ -19,9 +20,7 @@ tk.Label(root,text="TRANSLATOR",font=("Forte", 25),foreground='blue').place(x=57
 a = tk.StringVar() 
 auto_detect = ttk.Combobox(root, width = 20, textvariable = a, state='readonly',font=('verdana',12,'bold')) 
 auto_detect['values'] = (
-                          'Auto Detect', 
-                          ) 
-  
+                          'Auto Detect') 
 auto_detect.place(x=50,y=70)
 auto_detect.current(0) 
 l = tk.StringVar() 
@@ -40,7 +39,6 @@ choose_langauge['values'] = ('Afrikaans',
                         'Chichewa',
                         'Chinese (simplified)',
                         'Chinese (traditional)',
-                             
                         'Corsican',
                         'Croatian',
                        ' Czech',
